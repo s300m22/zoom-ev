@@ -1,0 +1,5 @@
+mutation addBundleTypeReseller($businessId: String!, $bundleTypeId: String!) {
+  addBundleTypeReseller(businessId: $businessId, bundleTypeId: $bundleTypeId) {
+    id,
+  }
+}

@@ -1,0 +1,82 @@
+query carRentalRequests ($params: CarRentalRequestsQueryParamsInput!) {
+  carRentalRequests(params: $params) {
+    overallCount
+    rentalRequests {
+      id 
+      status 
+      timeStart 
+      timeEnd 
+      additionalFee 
+      rentalFeeSum 
+      rentalFeeZoom
+      rentalFeeOwner
+      user {
+        id
+        details {
+          firstName
+          lastName
+          avatarImage {
+            url
+            id
+          }
+        }
+        business {
+          displayName
+          id
+          logoImage {
+            url
+          }
+        }
+        reviewsAverageScore
+        reviewsCount
+      }
+      car {
+        id
+        business {
+          id
+          displayName
+          logoImage {
+            id
+            url
+          }
+        }
+        user {
+          id
+          details {
+            firstName 
+            lastName
+            avatarImage {
+              id 
+              url
+            }
+          }
+        }
+        details {
+          registration
+          maker {
+            name
+          }
+          model {
+            name
+          }
+          images {
+            url
+            id
+          }
+          mainImageId
+        }
+      }
+      acceptanceNote 
+      rejectionNote 
+      incidentDescription 
+      prices {
+        rentalFeeSum 
+        rentalFeeOwner 
+        rentalFeeZoom 
+        additionalFee
+      }
+      createdAt
+      paymentStatus
+    }
+  }
+}

@@ -1,0 +1,3 @@
+query getCarGuide($carId: String!) {
+  carGuide(carId: $carId)
+}

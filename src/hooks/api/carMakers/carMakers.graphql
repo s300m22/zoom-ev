@@ -1,0 +1,10 @@
+query carMakers {
+  carMakers {
+    id
+    name
+    models {
+      id
+      name
+    }
+  }
+}

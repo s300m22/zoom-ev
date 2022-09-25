@@ -1,0 +1,5 @@
+mutation createBusiness($input: BusinessCreateInput!) {
+  createBusiness(input: $input) {
+    name
+  }
+}

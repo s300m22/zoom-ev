@@ -1,0 +1,5 @@
+mutation updateCarSalesInfo($salesInfoInput: CarSalesInfoInputType!, $carId: String!) {
+  updateCarSalesInfo(salesInfoInput: $salesInfoInput, carId: $carId) {
+    id
+  }
+}

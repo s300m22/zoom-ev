@@ -1,0 +1,27 @@
+query getBundlesThatICanPurchase {
+  bundleTypeThatICanPurchase {
+    id,
+    name,
+    price,
+    description,
+    contentPageUrl,
+    periodDuration,
+    currentVersionId,
+    isDefault,
+    grantedBy {
+      id
+      name
+      brandName
+      locationName
+      displayName
+      emailAddress
+      phoneNumber
+      address
+      tradingHours
+      isFleetInsuranceInPlace
+      logoImage {
+        url
+      }
+    }
+  }
+}

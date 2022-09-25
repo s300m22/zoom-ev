@@ -1,0 +1,5 @@
+mutation deleteCarAvailabilityPeriodChain ($chainId: String!) {
+  deleteCarAvailabilityPeriodChain(chainId: $chainId) {
+    id
+  }
+}

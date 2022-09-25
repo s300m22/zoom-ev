@@ -1,0 +1,5 @@
+mutation updateCallRequest($input: CallRosterRequestUpdateInput!) {
+  updateCallRequest(input: $input) {
+    id
+  }
+}

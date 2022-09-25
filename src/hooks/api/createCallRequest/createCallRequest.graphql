@@ -1,0 +1,8 @@
+
+
+
+mutation createCallRequest ($input: CallRosterRequestCreateInput!) {
+  createCallRequest(input: $input) {
+    id
+  }
+}

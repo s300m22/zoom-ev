@@ -1,0 +1,33 @@
+query carsRecentlyCreated ($limit: Int) {
+  carsRecentlyCreated(limit: $limit) {
+    id
+    addressPublic 
+    pricePerDay
+    details {
+      maker {
+        id 
+        name
+      }
+      model {
+        id 
+        name
+      }
+      images {
+        id 
+        url
+      }
+      mainImageId
+    }
+    business {
+      id 
+      displayName
+      logoImage {
+        id 
+        url
+      }
+    }
+    reviewsAverageScore 
+    reviewsCount
+    isAvailableToBuy
+  }
+}

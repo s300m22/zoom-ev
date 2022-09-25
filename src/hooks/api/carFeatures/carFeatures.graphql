@@ -1,0 +1,7 @@
+query carFeatures {
+  carFeatures {
+    id
+    name
+    type
+  }
+}

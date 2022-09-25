@@ -1,0 +1,14 @@
+query resellerDiscountAdditionalData  {
+  resellerDiscountAdditionalData  {
+    carMakerName 
+    carModelName 
+    estimatedCarDeliveryDate 
+    isCarPartOfFleet
+    granteePhoneNumber
+    addressLine1
+    addressLine2
+    city
+    county
+    postcode
+  }
+}

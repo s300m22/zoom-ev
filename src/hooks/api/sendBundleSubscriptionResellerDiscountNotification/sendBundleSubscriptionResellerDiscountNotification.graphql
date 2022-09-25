@@ -1,0 +1,3 @@
+mutation sendBundleSubscriptionResellerDiscountNotification($resellerDiscountId: String!) {
+  sendBundleSubscriptionResellerDiscountNotification(resellerDiscountId: $resellerDiscountId)
+}

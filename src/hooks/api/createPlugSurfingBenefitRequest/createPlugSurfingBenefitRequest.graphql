@@ -1,0 +1,11 @@
+mutation plugsurfing {
+  createPlugSurfingBenefitRequest {
+    id
+    userId
+    businessId
+    createdAt
+    type
+    details
+    status
+  }
+}

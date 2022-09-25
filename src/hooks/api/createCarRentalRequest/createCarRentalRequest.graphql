@@ -1,0 +1,5 @@
+mutation createCarRentalRequest($input: CreateRentalRequestInputType!) {
+  createCarRentalRequest(input: $input) {
+    id
+  }
+}

@@ -1,0 +1,7 @@
+mutation calculateCarEarnings ($input: CarEarningsInputType!) {
+  calculateCarEarnings (input: $input) {
+    hourly
+    daily
+    weekly
+  }
+}

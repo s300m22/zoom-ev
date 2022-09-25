@@ -1,0 +1,6 @@
+query carRealLocation ($carId: String!) {
+  carRealLocation (carId: $carId) {
+    lat 
+    lon
+  }
+}

@@ -1,0 +1,5 @@
+mutation finishCarRentalRequest ($id: String!) {
+  finishCarRentalRequest(id: $id) {
+    id
+  }
+}

@@ -1,0 +1,20 @@
+query carRentalOverview {
+  carRentalOverview {
+    rows {
+      rentalRequestId
+      kind 
+      text 
+      user {
+        id
+        details {
+          firstName 
+          lastName 
+          avatarImage {
+            id 
+            url
+          }
+        }
+      }
+    }
+  }
+}

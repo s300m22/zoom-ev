@@ -1,0 +1,10 @@
+mutation updateBundleSubscriptionPaymentMethod($paymentMethodId: String!) {
+  updateBundleSubscriptionPaymentMethod(paymentMethodId: $paymentMethodId) {
+    bundleSubscription {
+      id
+    }
+    stripeSubscriptionStatus
+    stripeClientSecret
+  }
+}
+

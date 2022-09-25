@@ -1,0 +1,6 @@
+mutation commitImageUpload ($imageId: String!) {
+  commitImageUpload(imageId: $imageId) {
+    id 
+    url
+  }
+}

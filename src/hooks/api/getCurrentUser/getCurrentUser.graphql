@@ -1,0 +1,119 @@
+query getCurrentUser {
+  me {
+    id
+    email
+    businessUserRole
+    validAsCarOwner
+    validAsCarRenter
+    businessUserRole
+    createdAt
+    bannedAt
+    reviewsAverageScore
+    isOwnerProfileSetupFlowInitiated
+    isBusinessInvitationPopupClosed
+    reviewsCount
+    reviews {
+      id
+      score
+      note
+      reviewType
+      resourceId
+      user {
+        id
+      }
+      business {
+        id
+      }
+    }
+    isAdmin
+    stripeConnectedAccountId
+    stripeConnectedAccountUrl
+    stripeConnectedAccountSetupRequired
+    business {
+      id
+      name
+      logoImage {
+        id
+        url
+      }
+    }
+    paymentMethods {
+      id
+      brand
+      last4
+    }
+    details {
+      approvalStatus
+      rejectionReason
+      firstName
+      lastName
+      dateOfBirth
+      addressLine1
+      addressLine2
+      phoneNumber
+      city
+      county
+      postCode
+      drivingLicenseNumber
+      drivingLicenseValidFrom
+      drivingLicenseValidTo
+      drivingLicenseCountryOfIssue
+      drivingRecordCheckCode
+      drivingLicenseFrontImage {
+        id
+        url
+      }
+      drivingLicenseSelfieImage {
+        id
+        url
+      }
+      passportFrontImage {
+        id
+        url
+      }
+      avatarImage {
+        id
+        url
+      }
+    }
+    detailsRequested {
+      approvalStatus
+      rejectionReason
+      firstName
+      lastName
+      dateOfBirth
+      addressLine1
+      addressLine2
+      phoneNumber
+      city
+      county
+      postCode
+      drivingLicenseNumber
+      drivingLicenseValidFrom
+      drivingLicenseValidTo
+      drivingLicenseCountryOfIssue
+      drivingRecordCheckCode
+      drivingLicenseFrontImage {
+        id
+        url
+      }
+      drivingLicenseSelfieImage {
+        id
+        url
+      }
+      passportFrontImage {
+        id
+        url
+      }
+      avatarImage {
+        id
+        url
+      }
+    }
+    communicationPreferences {
+      emailAllowed
+      smsAllowed
+      phoneAllowed
+    }
+  }
+}

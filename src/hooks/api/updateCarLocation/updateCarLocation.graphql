@@ -1,0 +1,5 @@
+mutation updateCarLocation ($addressPrivate: String!, $addressPublic: String!, $lon: Float!, $lat: Float!, $carId: String!) {
+  updateCarLocation (addressPrivate: $addressPrivate, addressPublic: $addressPublic, lon: $lon, lat: $lat, carId: $carId) {
+    id
+  }
+}

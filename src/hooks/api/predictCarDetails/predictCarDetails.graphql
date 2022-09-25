@@ -1,0 +1,13 @@
+mutation predictCarDetails($registration: String!) {
+  predictCarDetails(registration: $registration) {
+    make 
+    model 
+    year 
+    color 
+    value 
+    doorCount
+    seatCount 
+    transmission 
+    motor
+  }
+}

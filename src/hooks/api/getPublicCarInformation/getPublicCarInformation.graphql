@@ -1,0 +1,99 @@
+query getPublicCar($id: String!) {
+  car(id: $id) {
+    id
+    visible
+    fakeLocation {
+      radius
+      lat
+      lon
+    }
+    reviewsAverageScore
+    reviewsCount
+    pricePerHour
+    pricePerWeek
+    pricePerDay
+    addressPublic
+    isAvailableToBuy
+    user {
+      id
+      reviewsAverageScore
+      reviewsCount
+      details {
+        firstName
+        lastName
+        avatarImage {
+          id
+          url
+        }
+      }
+    }
+    business {
+      id
+      displayName
+      brandName
+      reviewsAverageScore
+      reviewsCount
+      tradingHours
+      logoImage {
+        id
+        url
+      }
+    }
+    details {
+      id
+      registration
+      description
+      vin
+      type
+      motor
+      mainImageId
+      maker {
+        id
+        name
+      }
+      model {
+        id
+        name
+      }
+      year
+      value
+      mileage
+      doors
+      seats
+      transmission
+      color
+      range
+      images {
+        id
+        url
+      }
+    }
+    availabilityPeriods {
+      id
+      timeStart
+      timeEnd
+      allDayDate
+      chainId
+    }
+    availabilityPeriodsComputed {
+      timeStart
+      timeEnd
+    }
+    bookedPeriods {
+      timeStart
+      timeEnd
+    }
+    features {
+      id
+      name
+      type
+    }
+    salesInfo {
+      price
+      email
+      phoneNumber
+      url
+      description
+    }
+  }
+}

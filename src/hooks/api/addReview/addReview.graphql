@@ -1,0 +1,5 @@
+mutation addReview ($note: String!, $score: Int!, $rentalRequestId: String!, $reviewType: ReviewTypeEnum!) {
+  addReview (note: $note, score: $score, rentalRequestId: $rentalRequestId, reviewType: $reviewType) {
+    id
+  }
+}

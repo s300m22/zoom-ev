@@ -1,0 +1,5 @@
+mutation grantBundleSubscriptionResellerDiscount ($input: GrantBundleSubscriptionResellerDiscountInput!) {
+  grantBundleSubscriptionResellerDiscount(input: $input) {
+    id
+  }
+}

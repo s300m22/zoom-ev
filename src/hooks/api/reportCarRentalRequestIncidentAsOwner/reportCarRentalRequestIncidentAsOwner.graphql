@@ -1,0 +1,5 @@
+mutation reportCarRentalRequestIncidentAsOwner ($incidentDescription: String!, $id: String!) {
+  reportCarRentalRequestIncidentAsOwner(incidentDescription: $incidentDescription, id: $id) {
+    id
+  }
+}

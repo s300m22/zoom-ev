@@ -1,0 +1,3 @@
+mutation unsubscribeNewsletter ($email: Email!) {
+  unsubscribeNewsletter(email: $email)
+}

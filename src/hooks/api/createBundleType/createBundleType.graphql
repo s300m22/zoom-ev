@@ -1,0 +1,8 @@
+mutation createBundleType($bundleInput: CreateBundleTypeInput!) {
+  createBundleType(bundleInput: $bundleInput) {
+    name
+    price
+    description
+    periodDuration
+  }
+}

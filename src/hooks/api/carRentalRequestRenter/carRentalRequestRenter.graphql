@@ -1,0 +1,105 @@
+query carRentalRequestRenter ($id: String!) {
+  carRentalRequest(id: $id) {
+      id 
+      status 
+      timeStart 
+      timeEnd 
+      additionalFee 
+      rentalFeeSum 
+      rentalFeeZoom
+      rentalFeeOwner
+      user {
+        id
+        details {
+          firstName
+          lastName
+          phoneNumber
+          avatarImage {
+            url
+            id
+          }
+        }
+        business {
+          id
+          phoneNumber
+          logoImage {
+            url
+          }
+        }
+        reviewsAverageScore
+        reviewsCount
+      }
+      car {
+        id
+        addressPublic
+        addressPrivate
+        salesInfo {
+          id
+          price
+          email
+          phoneNumber
+          url
+          description
+        }
+        business {
+          displayName
+          reviewsAverageScore
+          reviewsCount
+          phoneNumber
+          logoImage {
+            id 
+            url
+          }
+        }
+        user {
+          details {
+            firstName 
+            lastName
+            phoneNumber
+            avatarImage {
+              id 
+              url 
+            }
+          }
+          reviewsAverageScore 
+          reviewsCount
+        }
+        fakeLocation {
+          radius
+          lat
+          lon
+        }
+        details {
+          registration
+          maker {
+            name
+          }
+          model {
+            name
+          }
+          images {
+            url
+            id
+          }
+          mainImageId
+        }
+      }
+      acceptanceNote 
+      rejectionNote 
+      incidentDescription 
+      prices {
+        rentalFeeSum 
+        rentalFeeOwner 
+        rentalFeeZoom 
+        additionalFee
+      }
+      createdAt
+      paymentStatus
+      stripePaymentIntentClientSecret
+      paymentMethod {
+        id
+        brand 
+        last4
+      }
+  }
+}

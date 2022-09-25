@@ -1,0 +1,5 @@
+mutation addCarAvailabilityPeriod($input: AddCarAvailabilityPeriodInputType!) {
+  addCarAvailabilityPeriod(input: $input) {
+    id
+  }
+}

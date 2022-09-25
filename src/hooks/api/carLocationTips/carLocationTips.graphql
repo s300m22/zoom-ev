@@ -1,0 +1,3 @@
+query carLocationTips($carId: String!) {
+  carLocationTips(carId: $carId)
+}

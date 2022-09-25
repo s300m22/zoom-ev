@@ -1,0 +1,11 @@
+mutation submitContactFormRequest($input: ContactFormRequestInput!) {
+  submitContactFormRequest(input: $input) {
+    id
+    name
+    telephone
+    email
+    topic
+    message
+    createdAt
+  }
+}

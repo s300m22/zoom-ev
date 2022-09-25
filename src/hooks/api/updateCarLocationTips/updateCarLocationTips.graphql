@@ -1,0 +1,3 @@
+mutation updateCarLocationTips ($locationTips: String!, $carId: String!) {
+  updateCarLocationTips (locationTips: $locationTips, carId: $carId)
+}

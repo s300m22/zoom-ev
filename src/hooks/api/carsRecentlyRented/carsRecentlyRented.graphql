@@ -1,0 +1,33 @@
+query carsRecentlyRented($byMe: Boolean, $limit: Int) {
+  carsRecentlyRented(byMe: $byMe, limit: $limit) {
+    id
+    addressPublic
+    pricePerDay
+    details {
+      maker {
+        id
+        name
+      }
+      model {
+        id
+        name
+      }
+      images {
+        id
+        url
+      }
+      mainImageId
+    }
+    business {
+      id
+      displayName
+      logoImage {
+        id
+        url
+      }
+    }
+    reviewsAverageScore
+    reviewsCount
+    isAvailableToBuy
+  }
+}

@@ -1,0 +1,5 @@
+mutation deleteCarAvailabilityPeriod($periodId: String!) {
+  deleteCarAvailabilityPeriod(periodId: $periodId) {
+    id
+  }
+}

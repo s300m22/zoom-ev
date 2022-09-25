@@ -1,0 +1,10 @@
+query carRentalRequestsStatus ($params: CarRentalRequestsQueryParamsInput!) {
+  carRentalRequests(params: $params) {
+    overallCount
+    rentalRequests {
+      id
+      paymentStatus 
+      stripePaymentIntentClientSecret
+    }
+  }
+}

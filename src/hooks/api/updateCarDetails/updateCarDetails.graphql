@@ -1,0 +1,12 @@
+mutation updateCarDetails($updateInput: CarDetailsUpdateInputType!, $carId: String!) {
+  updateCarDetails(updateInput: $updateInput, carId: $carId) {
+    id
+    details {
+      images {
+        id 
+        url
+      }
+      mainImageId
+    }
+  }
+}

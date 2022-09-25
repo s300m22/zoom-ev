@@ -1,0 +1,7 @@
+query stripeSetupIntents {
+  stripeSetupIntents {
+    id
+    cardLast4
+    cardBrand
+  }
+}

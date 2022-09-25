@@ -1,0 +1,5 @@
+mutation createCarModel ($visible: Boolean, $name: String!, $carMakerId: String!) {
+  createCarModel(visible: $visible, name: $name, carMakerId: $carMakerId) {
+    id
+  }
+}

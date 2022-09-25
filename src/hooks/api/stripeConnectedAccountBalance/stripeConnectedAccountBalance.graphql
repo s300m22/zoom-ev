@@ -1,0 +1,6 @@
+query stripeConnectedAccountBalance {
+  stripeConnectedAccountBalance {
+    available 
+    pending
+  }
+}

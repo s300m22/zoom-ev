@@ -1,0 +1,8 @@
+query carRentalPrice ($timeEnd: Float!, $timeStart: Float!, $carId: String!) {
+  carRentalPrice(timeEnd: $timeEnd, timeStart: $timeStart, carId: $carId) {
+    rentalFeeSum 
+    rentalFeeOwner 
+    rentalFeeZoom 
+    additionalFee
+  }
+}

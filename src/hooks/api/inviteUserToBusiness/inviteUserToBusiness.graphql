@@ -1,0 +1,6 @@
+mutation inviteUserToBusiness($businessId: String, $input: BusinessUserInvitationCreateInput!) {
+  inviteUserToBusiness(businessId: $businessId, input: $input) {
+    id
+    email
+  }
+}

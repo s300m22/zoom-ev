@@ -1,0 +1,5 @@
+mutation updateMyDetails($isDraft: Boolean, $update: UserDetailsUpdateInput!) {
+  updateMyDetails(isDraft: $isDraft, update: $update) {
+    firstName,
+  }
+}

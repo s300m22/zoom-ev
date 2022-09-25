@@ -1,0 +1,7 @@
+query recommendedCarPrice($business: Boolean!, $carValue: CarValueEnum!, $carAge: Int!) {
+  recommendedCarPrice(business: $business, carValue: $carValue, carAge: $carAge) {
+    pricePerHour
+    pricePerDay
+    pricePerWeek
+  }
+}

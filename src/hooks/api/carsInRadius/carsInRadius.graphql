@@ -1,0 +1,27 @@
+query carsInRadius ($params: CarSearchParamsInputType!) {
+  carsInRadius(params: $params) {
+    cars {
+      id
+      makerName
+      modelName
+      pricePerDay
+      reviewsAverageScore
+      reviewsCount
+      available
+      business {
+        logoImage {
+          id
+          url
+        }
+      }
+      location {
+        radius 
+        lat 
+        lon
+      }
+      addressPublic 
+      mainImageUrl
+    }
+    overallCount
+  }
+}

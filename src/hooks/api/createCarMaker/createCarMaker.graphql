@@ -1,0 +1,5 @@
+mutation createCarMaker ($visible: Boolean, $name: String!) {
+  createCarMaker(visible: $visible, name: $name) {
+    id
+  }
+}

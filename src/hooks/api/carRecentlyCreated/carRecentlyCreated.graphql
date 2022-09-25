@@ -1,0 +1,13 @@
+query carRecentlyCreated {
+  carRecentlyCreated {
+    id
+    fakeLocation {
+      lat 
+      lon
+    }
+    realLocation {
+      lat 
+      lon
+    }
+  }
+}

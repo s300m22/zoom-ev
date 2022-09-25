@@ -1,0 +1,17 @@
+mutation addCommunicationPreferencesByEmail(
+  $emailAddress: Email!
+  $email: Boolean!
+  $phone: Boolean!
+  $sms: Boolean!
+) {
+  addCommunicationPreferencesByEmail(
+    preferencesInput: {
+      email: $emailAddress
+      emailAllowed: $email
+      smsAllowed: $sms
+      phoneAllowed: $phone
+    }
+  ) {
+    id
+  }
+}

@@ -1,0 +1,39 @@
+query bundleSubscription ($id: String) {
+  bundleSubscription (id: $id){
+    id
+    status
+    periods {
+      id
+      timeStart
+      timeEnd
+    }
+    code
+    createdAt
+    bundleType {
+      id
+      name
+      price
+      contentPageUrl
+      contentfulBenefitsComponentId
+      contentfulBannerComponentId
+      grantedBy {
+        logoImage {
+          url
+        }
+      }
+    }
+    paymentMethod {
+      id 
+      brand 
+      last4
+    }
+    resellerBusiness {
+      logoImage {
+        id
+        url
+      }
+    }
+    currentPeriodStart
+    currentPeriodEnd
+  }
+}

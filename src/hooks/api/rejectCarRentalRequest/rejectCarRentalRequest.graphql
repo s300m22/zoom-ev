@@ -1,0 +1,5 @@
+mutation rejectCarRentalRequest ($note: String, $id: String!) {
+  rejectCarRentalRequest(note: $note, id: $id) {
+    id
+  }
+}

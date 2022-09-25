@@ -1,0 +1,5 @@
+mutation updateMyPhoneNumber($phoneNumber: String!) {
+  updateMyPhoneNumber(phoneNumber: $phoneNumber) {
+    firstName
+  }
+}

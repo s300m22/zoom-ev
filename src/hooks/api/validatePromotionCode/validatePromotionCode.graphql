@@ -1,0 +1,13 @@
+mutation validatePromotionCodeV2($code: String!) {
+  validatePromotionCodeV2(code: $code) {
+    active 
+    code 
+    amountOff 
+    percentOff 
+    valid 
+    metadata {
+      key
+      value
+    }
+  }
+}

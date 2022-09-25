@@ -1,0 +1,8 @@
+query myCallRequest {
+  myCallRequest {
+    id
+    requestedDate
+    requestedTime
+    resellerName
+  }
+}

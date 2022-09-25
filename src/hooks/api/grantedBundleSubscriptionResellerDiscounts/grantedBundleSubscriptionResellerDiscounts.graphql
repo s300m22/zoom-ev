@@ -1,0 +1,26 @@
+query grantedBundleSubscriptionResellerDiscounts {
+  grantedBundleSubscriptionResellerDiscounts {
+    id
+    status
+    grantee {
+      email
+      firstName
+      lastName
+      phoneNumber
+      user {
+        id
+      }
+    }
+    carMakerName
+    carModelName
+    estimatedCarDeliveryDate
+    isCarPartOfFleet
+    createdAt
+    createdBy {
+      details {
+        firstName 
+        lastName
+      }
+    }
+  }
+}

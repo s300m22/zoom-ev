@@ -1,0 +1,5 @@
+mutation setCarVisible ($visible: Boolean!, $carId: String!) {
+  setCarVisible(visible: $visible, carId: $carId) {
+    id
+  }
+}

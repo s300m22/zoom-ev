@@ -1,0 +1,3 @@
+mutation updateCarGuide ($guide: String!, $carId: String!) {
+  updateCarGuide(guide: $guide, carId: $carId)
+}

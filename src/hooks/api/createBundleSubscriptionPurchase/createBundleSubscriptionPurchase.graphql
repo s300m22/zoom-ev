@@ -1,0 +1,9 @@
+mutation createBundleSubscriptionPurchase($input: PurchaseBundleSubscriptionInput!) {
+  createBundleSubscriptionPurchase(input: $input) {
+    bundleSubscription {
+      id
+    }
+    stripeSubscriptionStatus
+    stripeClientSecret
+  }
+}

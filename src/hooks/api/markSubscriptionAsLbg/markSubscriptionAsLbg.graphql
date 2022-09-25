@@ -1,0 +1,5 @@
+mutation markSubscriptionAsLbg($response: Boolean!, $subscriptionId: String!) {
+  markSubscriptionAsLbg(response: $response, subscriptionId: $subscriptionId) {
+    id
+  }
+}

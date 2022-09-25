@@ -1,0 +1,7 @@
+mutation createStripeSetupIntent ($paymentMethodId: String!) {
+  createStripeSetupIntent(paymentMethodId: $paymentMethodId) {
+    setupIntentId
+    status
+    clientSecret
+  }
+}

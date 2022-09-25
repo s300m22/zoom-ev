@@ -1,0 +1,3 @@
+mutation deleteCar($carId: String!) {
+  deleteCar(carId: $carId)
+}

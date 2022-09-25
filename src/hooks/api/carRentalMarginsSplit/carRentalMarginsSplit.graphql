@@ -1,0 +1,6 @@
+query carRentalMarginSplit {
+  carRentalMarginSplit {
+    owner 
+    zoom
+  }
+}

@@ -1,0 +1,6 @@
+query getUsers ($limit: Int, $offset: Int, $order: UsersOrderEnum) {
+  users(params: { limit: $limit, offset: $offset, order: $order }) {
+    id
+    email
+  }
+}

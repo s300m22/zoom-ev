@@ -1,0 +1,5 @@
+mutation updateMyAvatar($avatarImageId: String!) {
+  updateMyAvatar(avatarImageId: $avatarImageId) {
+    firstName
+  }
+}

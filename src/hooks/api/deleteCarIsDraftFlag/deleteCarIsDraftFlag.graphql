@@ -1,0 +1,5 @@
+mutation deleteCarIsDraftFlag($carId: String!) {
+  deleteCarIsDraftFlag(carId: $carId) {
+    id
+  }
+}

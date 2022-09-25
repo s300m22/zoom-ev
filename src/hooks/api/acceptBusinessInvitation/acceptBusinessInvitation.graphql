@@ -1,0 +1,6 @@
+mutation acceptBusinessInvitation {
+  acceptBusinessInvitation {
+    email
+    id
+  }
+}

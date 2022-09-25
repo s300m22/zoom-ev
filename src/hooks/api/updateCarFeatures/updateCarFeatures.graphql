@@ -1,0 +1,5 @@
+mutation updateCarFeatures ($features: [String!]!, $carId: String!) {
+  updateCarFeatures(features: $features, carId: $carId) {
+    id
+  }
+}
