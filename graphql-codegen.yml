@@ -1,0 +1,22 @@
+overwrite: true
+schema: ${NEXT_PUBLIC_API_URL}/graphql
+documents: 'src/**/*.graphql'
+generates:
+  src/interfaces/api.types.generated.d.ts:
+    plugins:
+      - typescript
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .generated.ts
+      baseTypesPath: interfaces/api.types.generated.d.ts
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      withRefetchFn: true
+      withHooks: true
+config:
+  scalars:
+    DateTime: string

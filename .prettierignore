@@ -1,0 +1,12 @@
+/node_modules
+/build
+/.next
+lint-staged.config.js
+package.json
+/coverage
+*.generated.ts
+*.generated.d.ts
+*.graphql
+.yarnrc.yml
+.yarn/
+docker-compose.yml

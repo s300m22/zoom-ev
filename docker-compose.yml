@@ -1,0 +1,5 @@
+services:
+  web:
+    image: "870541317924.dkr.ecr.eu-west-2.amazonaws.com/zoomev-web:production"
+    ports:
+      - "80:8080"
